@@ -50,12 +50,14 @@ const Portfolio = () => {
         {projects.map((project) => {
           return (
             <div key={project.id} className="portfolio-box">
+              {/* <div className="portfolio-layer-black"> */}
               <img src={project.photo} alt="" />
+              {/* </div> */}
               <div className="portfolio-layer">
                 <h4>{project.title}</h4>
                 <p>{project.text}</p>
                 <a href="">
-                  <box-icon name="link-external"></box-icon>
+                  <box-icon name="link-external" />
                 </a>
               </div>
             </div>

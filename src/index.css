@@ -276,13 +276,6 @@ span {
   align-items: center;
 }
 
-/* .sparkles-icon {
-  color: #b49bff;
-  margin-right: 10px;
-  height: 5px;
-  width: 5px;
-} */
-
 .welcome-text {
   font-size: 13px;
 }
@@ -332,11 +325,6 @@ span {
   transform: scale(1.02);
 }
 
-.services-box i {
-  font-size: 7rem;
-  color: var(--main-color);
-}
-
 .services-box h3 {
   font-size: 2.6rem;
 }
@@ -344,6 +332,11 @@ span {
 .services-box p {
   font-size: 1.6rem;
   margin: 1rem 0 3rem;
+}
+
+.serviceIcons {
+  height: 10rem;
+  width: auto;
 }
 
 /*! Feature Projects Section */
@@ -468,6 +461,16 @@ span {
 .portfolio-box:hover .portfolio-layer {
   transform: translateY(0);
 }
+
+/* .portfolio-layer-black {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: #000;
+} */
 
 .portfolio-layer h4 {
   font-size: 3rem;
