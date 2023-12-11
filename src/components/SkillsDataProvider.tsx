@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-interface props {
+type props = {
   src: string;
-  width: number;
+  width: number | string;
   height: number;
   index: number;
-}
+};
 const SkillsDataProvider = ({ src, width, height, index }: props) => {
   const [ref, inView] = useInView({
     triggerOnce: true,

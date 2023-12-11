@@ -1,4 +1,4 @@
-import React from "react";
+import "boxicons";
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
       </div>
       <div className="footer-iconTop">
         <a href="#home">
-          <i className="bx bxs-up-arrow-square"></i>
+          <box-icon type="solid" name="up-arrow-square"></box-icon>
         </a>
       </div>
     </footer>

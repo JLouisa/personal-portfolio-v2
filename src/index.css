@@ -37,7 +37,6 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  /* color: #2a2e35; */
   transition: all 0.4 ease-in-out;
   z-index: -1;
   transform: translate(-50%, -50%);
@@ -45,11 +44,23 @@ section {
   font-size: 6.3rem;
 }
 
+h2.heading {
+  z-index: 2;
+}
 .bg-color1 {
   color: var(--bg-color);
 }
 .bg-color2 {
   color: var(--second-bg-color);
+}
+.bg-color3 {
+  color: var(--text-color);
+}
+
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  position: relative;
 }
 
 /*! Header Section */
@@ -91,11 +102,6 @@ section {
 .navbar a:focus,
 .navbar a.active {
   color: var(--main-color);
-}
-
-.heading {
-  text-align: center;
-  font-size: 4rem;
 }
 
 /*! Home Section */
@@ -207,6 +213,95 @@ span {
 .about-content p {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
+}
+
+/*! Skills.css */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 20px;
+  transform: scale(0.9);
+  z-index: 2;
+}
+
+.skills-category {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+  margin-top: 1.5rem;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -10;
+  opacity: 0.3;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+
+.video-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* SkillsText.css */
+.skills-text-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-box {
+  padding: 8px 7px;
+  /* border: 1px solid #7042f88b; */
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+}
+
+/* .sparkles-icon {
+  color: #b49bff;
+  margin-right: 10px;
+  height: 5px;
+  width: 5px;
+} */
+
+.welcome-text {
+  font-size: 13px;
+}
+
+.main-text {
+  font-size: 30px;
+  color: white;
+  font-weight: medium;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.sub-text {
+  font-size: 20px;
+  color: #cccccc;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 /*! Service Section */

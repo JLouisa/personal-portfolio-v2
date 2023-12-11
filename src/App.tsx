@@ -5,7 +5,6 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
 import Service from "./components/Service";
-import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -13,7 +12,6 @@ function App() {
       <Header />
       <Home />
       <About />
-      <Skills />
       <Service />
       <Portfolio />
       <Contact />

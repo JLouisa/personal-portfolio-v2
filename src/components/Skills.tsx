@@ -1,44 +1,45 @@
-import { Backend_skill, Frontend_skill, Full_stack, Other_skill, Skill_data } from "../constants/index";
+import { Backend_skill, Frontend_skill, Full_stack, Other_skill, Skill_data } from "../constants/constantsImg";
 import SkillsDataProvider from "./SkillsDataProvider";
 import SkillsText from "./SkillsText";
 
 const Skills = () => {
   return (
-    <section
-      id="skills"
-      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-[20px]"
-      style={{ transform: "scale(0.9)", zIndex: 2 }}
-    >
+    <section id="skills" className="skills-container">
       <SkillsText />
-      <div className="flex flex-row justify-around flex-warp mt-4 gap-5 items-center">
+
+      <div className="skills-category">
         {Skill_data.map((image, index) => (
           <SkillsDataProvider key={index} src={image.Image} width={image.width} height={image.height} index={index} />
         ))}
       </div>
-      <div className="flex flex-row justify-around flex-warp mt-4 gap-5 items-center">
+
+      <div className="skills-category">
         {Frontend_skill.map((image, index) => (
           <SkillsDataProvider key={index} src={image.Image} width={image.width} height={image.height} index={index} />
         ))}
       </div>
-      <div className="flex flex-row justify-around flex-warp mt-4 gap-5 items-center">
+
+      <div className="skills-category">
         {Backend_skill.map((image, index) => (
           <SkillsDataProvider key={index} src={image.Image} width={image.width} height={image.height} index={index} />
         ))}
       </div>
-      <div className="flex flex-row justify-around flex-warp mt-4 gap-5 items-center">
+
+      <div className="skills-category">
         {Full_stack.map((image, index) => (
           <SkillsDataProvider key={index} src={image.Image} width={image.width} height={image.height} index={index} />
         ))}
       </div>
-      <div className="flex flex-row justify-around flex-warp mt-4 gap-5 items-center">
+
+      <div className="skills-category">
         {Other_skill.map((image, index) => (
           <SkillsDataProvider key={index} src={image.Image} width={image.width} height={image.height} index={index} />
         ))}
       </div>
-      <div className="w-full h-full absolute">
-        <div className="w-full h-full z-[-10] opacity-30 absolute flex items-center justify-center bg-cover">
-          <video className="w-full h-auto" preload="false" playsInline loop muted autoPlay src="/cards-video.webm" />
-        </div>
+
+      <div className="background-video">
+        <div className="video-overlay" />
+        <video className="background-video" preload="false" playsInline loop muted autoPlay src="/cards-video.webm" />
       </div>
     </section>
   );

@@ -1,6 +1,45 @@
 import photoImg from "../assets/representation/memory-card-game.gif";
+import "boxicons";
 
 const Portfolio = () => {
+  const projects = [
+    {
+      id: 1,
+      title: "Web Design",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odio?",
+      photo: photoImg,
+    },
+    {
+      id: 2,
+      title: "Web Design",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odio?",
+      photo: photoImg,
+    },
+    {
+      id: 3,
+      title: "Web Design",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odio?",
+      photo: photoImg,
+    },
+    {
+      id: 4,
+      title: "Web Design",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odio?",
+      photo: photoImg,
+    },
+    {
+      id: 5,
+      title: "Web Design",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odio?",
+      photo: photoImg,
+    },
+    {
+      id: 6,
+      title: "Web Design",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odio?",
+      photo: photoImg,
+    },
+  ];
   return (
     <section className="portfolio" id="portfolio">
       <h2 className="heading">
@@ -8,66 +47,20 @@ const Portfolio = () => {
         <span className="bg-text bg-color1">Lastest Projects</span>
       </h2>
       <div className="portfolio-container">
-        <div className="portfolio-box">
-          <img src={photoImg} alt="" />
-          <div className="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odio?</p>
-            <a href="">
-              <i className="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
-        <div className="portfolio-box">
-          <img src={photoImg} alt="" />
-          <div className="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odio?</p>
-            <a href="">
-              <i className="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
-        <div className="portfolio-box">
-          <img src={photoImg} alt="" />
-          <div className="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odio?</p>
-            <a href="">
-              <i className="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
-        <div className="portfolio-box">
-          <img src={photoImg} alt="" />
-          <div className="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odio?</p>
-            <a href="">
-              <i className="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
-        <div className="portfolio-box">
-          <img src={photoImg} alt="" />
-          <div className="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odio?</p>
-            <a href="">
-              <i className="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
-        <div className="portfolio-box">
-          <img src={photoImg} alt="" />
-          <div className="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odio?</p>
-            <a href="">
-              <i className="bx bx-link-external"></i>
-            </a>
-          </div>
-        </div>
+        {projects.map((project) => {
+          return (
+            <div key={project.id} className="portfolio-box">
+              <img src={project.photo} alt="" />
+              <div className="portfolio-layer">
+                <h4>{project.title}</h4>
+                <p>{project.text}</p>
+                <a href="">
+                  <box-icon name="link-external"></box-icon>
+                </a>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
