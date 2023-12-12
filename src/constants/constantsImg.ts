@@ -1,32 +1,36 @@
-import html5 from "../assets/icons/html5-original.svg";
+import api from "../assets/icons/api.png";
 import css3 from "../assets/icons/css3-original.svg";
-import js from "../assets/icons/js.png";
-import tailwind from "../assets/icons/tailwind.png";
-import react from "../assets/icons/react.png";
-import vite from "../assets/icons/vite.svg";
-import reactquery from "../assets/icons/reactquery.png";
-import ts from "../assets/icons/ts.png";
-import next from "../assets/icons/next.png";
+import django from "../assets/icons/django-plain.svg";
+import docker from "../assets/icons/docker.webp";
+import express from "../assets/icons/express.png";
+import figma from "../assets/icons/figma.png";
+import firebase from "../assets/icons/firebase.png";
 import framer from "../assets/icons/framer.png";
-import stripe from "../assets/icons/stripe.webp";
-import node from "../assets/icons/node-js.png";
+import go from "../assets/icons/go.png";
+import graphql from "../assets/icons/graphql.png";
+import html5 from "../assets/icons/html5-original.svg";
+import htmx from "../assets/icons/htmx.png";
+import jest from "../assets/icons/jest-plain.svg";
+import js from "../assets/icons/js.png";
 import mongodb from "../assets/icons/mongodb-original.svg";
 import mui from "../assets/icons/mui.png";
-import express from "../assets/icons/express.png";
-import firebase from "../assets/icons/firebase.png";
-import postger from "../assets/icons/postger.png";
 import mysql from "../assets/icons/mysql.png";
+import next from "../assets/icons/next.png";
+import node from "../assets/icons/node-js.png";
+import postger from "../assets/icons/postger.png";
 import prisma from "../assets/icons/prisma.webp";
-import graphql from "../assets/icons/graphql.png";
-import reactNative from "../assets/icons/reactNative.png";
-import tauri from "../assets/icons/tauri.svg";
-import docker from "../assets/icons/docker.webp";
-import figma from "../assets/icons/figma.png";
-import go from "../assets/icons/go.png";
-import ruby from "../assets/icons/ruby-original.svg";
-import django from "../assets/icons/django-plain.svg";
+import pug from "../assets/icons/pug.svg";
 import python from "../assets/icons/python-original.svg";
+import stripe from "../assets/icons/stripe.webp";
+import tauri from "../assets/icons/tauri.svg";
+import tailwind from "../assets/icons/tailwind.png";
+import ts from "../assets/icons/ts.png";
 import rails from "../assets/icons/rails-plain.svg";
+import react from "../assets/icons/react.png";
+import reactNative from "../assets/icons/reactNative.png";
+import reactquery from "../assets/icons/reactquery.png";
+import ruby from "../assets/icons/ruby-original.svg";
+import vite from "../assets/icons/vite.svg";
 
 export const Skill_data = [
   {
@@ -150,10 +154,10 @@ export const Frontend_skill = [
     height: 80,
   },
   {
-    skill_name: "Material UI",
-    Image: mui,
+    skill_name: "HTMX",
+    Image: htmx,
     width: "auto",
-    height: 80,
+    height: 50,
   },
   {
     skill_name: "React",
@@ -168,8 +172,8 @@ export const Frontend_skill = [
     height: 80,
   },
   {
-    skill_name: "React Query",
-    Image: reactquery,
+    skill_name: "Material UI",
+    Image: mui,
     width: "auto",
     height: 80,
   },
@@ -297,3 +301,16 @@ export const Other_skill = [
     height: 70,
   },
 ];
+
+// My projects
+export const waldoIcons = [react, api, node, express, mongodb];
+export const memoryCardIcons = [react, css3, vite, jest, api];
+export const blogIcons = [react, api, node, express, pug, mongodb];
+export const shoppingCardIcons = [react, css3, vite, jest, api];
+export const cssBallIcons = [html5, css3];
+export const weatherAppIcons = [html5, css3, js, api];
+
+// Latest projects
+export const faynaIcons = [ts, next, firebase, tailwind, vite];
+export const socialSphereIcons = [ts, react, node, mongodb, express, vite];
+export const whisperWaveIcons = [ts, htmx, node, mongodb, express, vite];
