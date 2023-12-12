@@ -1,5 +1,4 @@
 import JAL from "../assets/images/JAL.png";
-// import ScrollReveal from "scrollreveal";
 import "boxicons";
 import TheTyped from "./TheTyped";
 
@@ -24,9 +23,12 @@ const Home = () => {
             <box-icon type="logo" name="github" color="white"></box-icon>
           </a>
         </div>
-        <div>
+        <div className="homeBtn">
           <a href="" className="btn">
             Download CV
+          </a>
+          <a href="https://github.com/JLouisa" className="btn" target="_blank">
+            My Github
           </a>
         </div>
       </div>

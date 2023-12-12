@@ -3,7 +3,7 @@ import whisper from "../assets/representation/whisper.gif";
 import { faynaIcons, socialSphereIcons, whisperWaveIcons } from "../constants/constantsImg";
 import "boxicons";
 
-const Portfolio = () => {
+const Lastest = () => {
   const projects = [
     {
       id: 1,
@@ -11,6 +11,7 @@ const Portfolio = () => {
       text: "In my recent web project, I utilized Next.js, TypeScript, and Tailwind CSS to create a website that is not only functional but also inviting. With Firebase serving as both the database and authentication system, and incorporating robust security measures, users can seamlessly log in through Google or Email/Password. The contact form not only boasts an appealing design but also ensures reliable communication by utilizing Nodemailer for sending emails and storing messages in the database. Additionally, for admins/owners, I implemented a messaging dashboard that allows easy tracking of messages sent through the contact form. It's more than just technology; it's about forging connections and delivering seamless experiences.",
       photo: memoryCard,
       icons: faynaIcons,
+      href: "https://memory-card-peach-chi.vercel.app/",
     },
     {
       id: 2,
@@ -18,6 +19,7 @@ const Portfolio = () => {
       text: "In my recent web project, I utilized Next.js, TypeScript, and Tailwind CSS to create a website that is not only functional but also inviting. With Firebase serving as both the database and authentication system, and incorporating robust security measures, users can seamlessly log in through Google or Email/Password. The contact form not only boasts an appealing design but also ensures reliable communication by utilizing Nodemailer for sending emails and storing messages in the database. Additionally, for admins/owners, I implemented a messaging dashboard that allows easy tracking of messages sent through the contact form. It's more than just technology; it's about forging connections and delivering seamless experiences.",
       photo: memoryCard,
       icons: socialSphereIcons,
+      href: "https://memory-card-peach-chi.vercel.app/",
     },
     {
       id: 3,
@@ -25,6 +27,7 @@ const Portfolio = () => {
       text: "In my recent web project, I utilized Next.js, TypeScript, and Tailwind CSS to create a website that is not only functional but also inviting. With Firebase serving as both the database and authentication system, and incorporating robust security measures, users can seamlessly log in through Google or Email/Password. The contact form not only boasts an appealing design but also ensures reliable communication by utilizing Nodemailer for sending emails and storing messages in the database. Additionally, for admins/owners, I implemented a messaging dashboard that allows easy tracking of messages sent through the contact form. It's more than just technology; it's about forging connections and delivering seamless experiences.",
       photo: whisper,
       icons: whisperWaveIcons,
+      href: "https://memory-card-peach-chi.vercel.app/",
     },
   ];
   return (
@@ -36,9 +39,9 @@ const Portfolio = () => {
         </h2>
         {projects.map((project) => {
           return (
-            <div className="featured1">
+            <div key={project.id} className="featured1">
               <div className="featuredImg">
-                <a href="https://memory-card-peach-chi.vercel.app/" target="_blank">
+                <a href={project.href} target="_blank">
                   <img src={project.photo} alt="" />
                 </a>
                 <div className="portfolio-layer"></div>
@@ -76,4 +79,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Lastest;

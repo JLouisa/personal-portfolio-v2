@@ -13,7 +13,7 @@ import {
   weatherAppIcons,
 } from "../constants/constantsImg";
 
-const Blogs = () => {
+const Projects = () => {
   const blogs = [
     {
       id: 1,
@@ -21,6 +21,7 @@ const Blogs = () => {
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla debitis recusandae corrupti dolore asperiores nisi.",
       img: waldo,
       icons: waldoIcons,
+      href: "https://where-is-waldo-lyart.vercel.app/home",
     },
     {
       id: 2,
@@ -28,6 +29,7 @@ const Blogs = () => {
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla debitis recusandae corrupti dolore asperiores nisi.",
       img: blogsApi,
       icons: blogIcons,
+      href: "https://odin-blog.vercel.app/home",
     },
     {
       id: 3,
@@ -35,6 +37,7 @@ const Blogs = () => {
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla debitis recusandae corrupti dolore asperiores nisi.",
       img: shoppingCard,
       icons: shoppingCardIcons,
+      href: "https://shopping-cart-5gp33884t-jonathan-louisas-projects.vercel.app/home",
     },
     {
       id: 4,
@@ -42,6 +45,7 @@ const Blogs = () => {
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla debitis recusandae corrupti dolore asperiores nisi.",
       img: memoryCard,
       icons: memoryCardIcons,
+      href: "https://memory-card-peach-chi.vercel.app/",
     },
     {
       id: 5,
@@ -49,6 +53,7 @@ const Blogs = () => {
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla debitis recusandae corrupti dolore asperiores nisi.",
       img: cssBall,
       icons: cssBallIcons,
+      href: "https://jlouisa.github.io/bouncing-ball/",
     },
     {
       id: 6,
@@ -56,11 +61,12 @@ const Blogs = () => {
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla debitis recusandae corrupti dolore asperiores nisi.",
       img: weatherApp,
       icons: weatherAppIcons,
+      href: "https://jlouisa.github.io/weather-app/",
     },
   ];
 
   return (
-    <section className="section sec4" id="blogs">
+    <section className="section sec4" id="projects">
       <div className="blogs-content">
         <div className="maint-title">
           <h2 className="heading">
@@ -71,7 +77,9 @@ const Blogs = () => {
             {blogs.map((blog) => {
               return (
                 <div key={blog.id} className="blog">
-                  <img src={blog.img} alt="project img" />
+                  <a href={blog.href} target="_blank">
+                    <img src={blog.img} alt="project img"></img>
+                  </a>
                   <div className="blogText">
                     <h4>
                       <p className="blogTitle">{blog.title}</p>
@@ -93,4 +101,4 @@ const Blogs = () => {
   );
 };
 
-export default Blogs;
+export default Projects;
