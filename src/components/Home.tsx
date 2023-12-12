@@ -19,12 +19,15 @@ const Home = () => {
           </p>
           <div className="social-media">
             <a href="https://www.facebook.com/jonathan.louisa" target="_blank">
+              {/* @ts-expect-error ts doesn't find the type */}
               <box-icon type="logo" name="meta" color="white"></box-icon>
             </a>
             <a href="https://www.linkedin.com/in/jonathan-louisa" target="_blank">
+              {/* @ts-expect-error ts doesn't find the type */}
               <box-icon type="logo" name="linkedin" color="white"></box-icon>
             </a>
             <a href="https://github.com/JLouisa" target="_blank">
+              {/* @ts-expect-error ts doesn't find the type */}
               <box-icon type="logo" name="github" color="white"></box-icon>
             </a>
           </div>

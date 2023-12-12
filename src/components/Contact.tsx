@@ -16,9 +16,9 @@ const Contact = () => {
   };
 
   const theToast = (e: FormEvent) => {
+    // @ts-expect-error ts doesn't find the type
     return sendEmail(formRef.current, e);
   };
-
   return (
     <section className="contact" id="contact">
       <ToastContainer />
@@ -26,6 +26,7 @@ const Contact = () => {
         Contact <span>Me</span>
         <span className="bg-text bg-color2">Contact Me</span>
       </h2>
+      {/* @ts-expect-error ts doesn't find the type */}
       <form ref={formRef} onSubmit={(e) => prepEmail(e)}>
         <div className="input-box">
           <input type="text" id="name" name="name" autoComplete="false" placeholder="Full Name" required />

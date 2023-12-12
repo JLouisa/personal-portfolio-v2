@@ -8,6 +8,7 @@ const Footer = () => {
       </div>
       <div className="footer-iconTop">
         <a href="#home">
+          {/* @ts-expect-error ts doesn't find the type */}
           <box-icon type="solid" name="up-arrow-square"></box-icon>
         </a>
       </div>

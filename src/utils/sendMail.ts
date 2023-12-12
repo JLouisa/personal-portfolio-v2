@@ -9,6 +9,7 @@ const sendEmail = async (info: HTMLFormElement, theE: FormEvent) => {
   console.log("send email");
   return emailjs.sendForm(serviceID, templateID, info, publicKey).then(
     (result) => {
+      // @ts-expect-error ts doesn't find the type
       theE.target.reset();
       return result.text;
     },
