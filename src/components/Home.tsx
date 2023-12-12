@@ -1,4 +1,4 @@
-import JAL from "../assets/images/JAL.png";
+import JAL from "../assets/images/JAL_formatted.png";
 import "boxicons";
 import TheTyped from "./TheTyped";
 
@@ -11,7 +11,11 @@ const Home = () => {
         <h3>
           And I'm a <TheTyped />
         </h3>
-        <p>I specialize in creating modern and responsive web applications. Welcome to my portfolio!</p>
+        <p>
+          I specialize in creating modern and responsive web applications.
+          <br />
+          Welcome to my portfolio!
+        </p>
         <div className="social-media">
           <a href="https://www.facebook.com/jonathan.louisa" target="_blank">
             <box-icon type="logo" name="meta" color="white"></box-icon>

@@ -1,4 +1,4 @@
-import JAL from "../assets/images/JAL.png";
+import JAL from "../assets/images/JAL_formatted2.png";
 
 const About = () => {
   return (

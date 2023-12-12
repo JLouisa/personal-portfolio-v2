@@ -31,6 +31,7 @@ import reactNative from "../assets/icons/reactNative.png";
 import reactquery from "../assets/icons/reactquery.png";
 import ruby from "../assets/icons/ruby-original.svg";
 import vite from "../assets/icons/vite.svg";
+import vue from "../assets/icons/vuejs-original.svg";
 
 export const Skill_data = [
   {
@@ -166,8 +167,8 @@ export const Frontend_skill = [
     height: 80,
   },
   {
-    skill_name: "Redux",
-    Image: vite,
+    skill_name: "Vue",
+    Image: vue,
     width: "auto",
     height: 80,
   },
