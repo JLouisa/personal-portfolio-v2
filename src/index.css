@@ -420,6 +420,9 @@ span {
   justify-content: space-evenly;
   align-items: center;
 }
+.featureIcons img {
+  border-radius: 5px;
+}
 .featuredTitle {
   text-align: center;
   font-size: 3rem;
