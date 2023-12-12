@@ -284,7 +284,7 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   margin-top: 1.5rem;
   gap: 1.5rem;
   align-items: center;
