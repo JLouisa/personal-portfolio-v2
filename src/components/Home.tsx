@@ -32,7 +32,11 @@ const Home = () => {
             </a>
           </div>
           <div className="homeBtn">
-            <a href="" className="btn">
+            <a
+              href="https://drive.google.com/file/d/1S89x08oNNV00AkJIMuvZunov6SKdHZw8/view?usp=drive_link"
+              className="btn"
+              target="_blank"
+            >
               <strong>Download CV</strong>
             </a>
             <a href="https://github.com/JLouisa" className="btn" target="_blank">
