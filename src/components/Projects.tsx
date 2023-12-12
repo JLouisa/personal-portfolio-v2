@@ -68,33 +68,31 @@ const Projects = () => {
   return (
     <section className="section sec4" id="projects">
       <div className="blogs-content">
-        <div className="maint-title">
-          <h2 className="heading">
-            My <span>Projects</span>
-            <span className="bg-text bg-color2">My Projects</span>
-          </h2>
-          <div className="blogs">
-            {blogs.map((blog) => {
-              return (
-                <div key={blog.id} className="blog">
-                  <a href={blog.href} target="_blank">
-                    <img src={blog.img} alt="project img"></img>
-                  </a>
-                  <div className="blogText">
-                    <h4>
-                      <p className="blogTitle">{blog.title}</p>
-                      <p>{blog.text}</p>
-                      <div className="blogIcons">
-                        {blog.icons.map((icon, index) => {
-                          return <img key={index} src={icon} alt="icons" />;
-                        })}
-                      </div>
-                    </h4>
-                  </div>
+        <h2 className="heading">
+          My <span>Projects</span>
+          <span className="bg-text bg-color2">My Projects</span>
+        </h2>
+        <div className="blogs">
+          {blogs.map((blog) => {
+            return (
+              <div key={blog.id} className="blog">
+                {/* <a href={blog.href} target="_blank"> */}
+                <img src={blog.img} alt="project img"></img>
+                {/* </a> */}
+                <div className="blogText">
+                  <h4>
+                    <p className="blogTitle">{blog.title}</p>
+                    <p>{blog.text}</p>
+                    <div className="blogIcons">
+                      {blog.icons.map((icon, index) => {
+                        return <img key={index} src={icon} alt="icons" />;
+                      })}
+                    </div>
+                  </h4>
                 </div>
-              );
-            })}
-          </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

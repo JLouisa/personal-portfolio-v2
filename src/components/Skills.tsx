@@ -4,7 +4,7 @@ import SkillsText from "./SkillsText";
 
 const Skills = () => {
   return (
-    <section id="skills" className="skills-container">
+    <div id="skills" className="skills-container">
       <SkillsText />
 
       <div className="skills-category">
@@ -41,7 +41,7 @@ const Skills = () => {
         <div className="video-overlay" />
         <video className="background-video" preload="false" playsInline loop muted autoPlay src="/cards-video.webm" />
       </div>
-    </section>
+    </div>
   );
 };
 
