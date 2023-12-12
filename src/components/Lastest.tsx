@@ -44,14 +44,14 @@ const Lastest = () => {
           return (
             <div key={project.id} className="featured">
               <a href={project.href} target="_blank">
-                <img src={project.photo} alt={project.alt} />
+                <img className="featuredImg" src={project.photo} alt={project.alt} />
               </a>
               <div className="featuredProject">
                 <p className="featuredTitle">{project.title}</p>
                 <p className="featuredText">{project.text}</p>
                 <div className="featureIcons">
                   {project.icons.map((icon, index) => {
-                    return <img key={index} src={icon} alt="icons" />;
+                    return <img key={index} src={icon} width="auto" height={80} alt="icons" />;
                   })}
                 </div>
               </div>
