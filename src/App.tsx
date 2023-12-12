@@ -18,7 +18,7 @@ function App() {
       delay: 200,
     });
     ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
-    ScrollReveal().reveal(".home-img, .services-container, .portfolio-box, .contact form, .featureIcons, .blogs", {
+    ScrollReveal().reveal(".home-img, .services-container, .portfolio-box, .contact form, .featureIcons, .blog", {
       origin: "bottom",
     });
     ScrollReveal().reveal(".home-content h1, .about-img, .bg-text, .featuredImg", { origin: "left" });

@@ -9,7 +9,7 @@ import framer from "../assets/icons/framer.png";
 import go from "../assets/icons/go.png";
 import graphql from "../assets/icons/graphql.png";
 import html5 from "../assets/icons/html5-original.svg";
-import htmx from "../assets/icons/htmx.png";
+import htmx from "../assets/icons/htmx3.png";
 import jest from "../assets/icons/jest-plain.svg";
 import js from "../assets/icons/js.png";
 import mongodb from "../assets/icons/mongodb-original.svg";
@@ -157,7 +157,7 @@ export const Frontend_skill = [
     skill_name: "HTMX",
     Image: htmx,
     width: "auto",
-    height: 50,
+    height: 80,
   },
   {
     skill_name: "React",

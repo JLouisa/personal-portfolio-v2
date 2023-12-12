@@ -30,9 +30,11 @@ const About = () => {
           Let's collaborate and make the web a better place, one project at a time. Reach out, and let's chat about your
           next big thing!
         </p>
-        <a href="" className="btn">
-          Read More
-        </a>
+        <div className="aboutMeBtn">
+          <a href="" className="btn">
+            Read More
+          </a>
+        </div>
       </div>
     </section>
   );

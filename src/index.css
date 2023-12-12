@@ -221,6 +221,11 @@ span {
   margin: 2rem 0 3rem;
 }
 
+.aboutMeBtn {
+  display: flex;
+  justify-content: center;
+}
+
 /*! Skills.css */
 .skills-container {
   display: flex;
@@ -243,6 +248,10 @@ span {
   margin-top: 1.5rem;
   gap: 1.5rem;
   align-items: center;
+}
+
+.skills-category div img {
+  border-radius: 10px;
 }
 
 .background-video {
@@ -406,6 +415,7 @@ span {
 }
 
 .featureIcons {
+  margin-top: 1rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -659,6 +669,20 @@ footer {
 }
 
 /*! Media Queries */
+
+/*! 1263px */
+@media (max-width: 1200px) {
+  .featured1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .featuredImg {
+    text-align: center;
+    height: 50rem;
+    width: auto;
+  }
+}
+
 /*! 1200px */
 @media (max-width: 1200px) {
   html {
@@ -685,6 +709,9 @@ footer {
   }
   footer {
     padding: 2srem 3%;
+  }
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -747,6 +774,9 @@ footer {
 /*! 617px */
 @media (max-width: 617px) {
   .portfolio-container {
+    grid-template-columns: 1fr;
+  }
+  .blogs {
     grid-template-columns: 1fr;
   }
 }
