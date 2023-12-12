@@ -312,6 +312,138 @@ export const cssBallIcons = [html5, css3];
 export const weatherAppIcons = [html5, css3, js, api];
 
 // Latest projects
-export const faynaIcons = [ts, next, firebase, tailwind, vite];
-export const socialSphereIcons = [ts, react, node, mongodb, express, vite];
-export const whisperWaveIcons = [ts, htmx, node, mongodb, express, vite];
+export const faynaIcons = [
+  {
+    skill_name: "React",
+    image: react,
+    width: "auto",
+    height: 50,
+  },
+  {
+    skill_name: "Api",
+    image: api,
+    width: "auto",
+    height: 50,
+  },
+  {
+    skill_name: "Node",
+    image: node,
+    width: "auto",
+    height: 50,
+  },
+  {
+    skill_name: "Express",
+    image: express,
+    width: "auto",
+    height: 50,
+  },
+  {
+    skill_name: "Mongodb",
+    image: mongodb,
+    width: "auto",
+    height: 50,
+  },
+];
+export const socialSphereIcons = [
+  {
+    skill_name: "typescript",
+    image: ts,
+    width: "auto",
+    height: 50,
+  },
+  {
+    skill_name: "React",
+    image: react,
+    width: "auto",
+    height: 50,
+  },
+  {
+    skill_name: "Node",
+    image: node,
+    width: "auto",
+    height: 50,
+  },
+  {
+    skill_name: "Express",
+    image: express,
+    width: "auto",
+    height: 50,
+  },
+  {
+    skill_name: "Mongodb",
+    image: mongodb,
+    width: "auto",
+    height: 50,
+  },
+  {
+    skill_name: "Vite",
+    image: vite,
+    width: "auto",
+    height: 50,
+  },
+];
+export const whisperWaveIcons = [
+  {
+    skill_name: "typescript",
+    image: ts,
+    width: "auto",
+    height: 50,
+  },
+  {
+    skill_name: "htmx",
+    image: htmx,
+    width: "auto",
+    height: 40,
+  },
+  {
+    skill_name: "Node",
+    image: node,
+    width: "auto",
+    height: 50,
+  },
+  {
+    skill_name: "Express",
+    image: express,
+    width: "auto",
+    height: 50,
+  },
+  {
+    skill_name: "Mongodb",
+    image: mongodb,
+    width: "auto",
+    height: 50,
+  },
+  {
+    skill_name: "Vite",
+    image: vite,
+    width: "auto",
+    height: 50,
+  },
+];
+
+export const menuLinks = [
+  {
+    title: "Home",
+    link: "#home",
+  },
+  {
+    title: "About",
+    link: "#about",
+  },
+  {
+    title: "Services",
+    link: "#service",
+  },
+  {
+    title: "Latest",
+    link: "#featured",
+  },
+  {
+    title: "Projects",
+    link: "#projects",
+  },
+  {
+    title: "Contact",
+    link: "#contact",
+  },
+];

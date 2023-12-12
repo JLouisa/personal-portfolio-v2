@@ -9,10 +9,9 @@ import Service from "./components/Service";
 import ScrollReveal from "scrollreveal";
 import { useEffect } from "react";
 
-function App() {
+const App = () => {
   useEffect(() => {
     ScrollReveal({
-      // reset: true,
       distance: "80px",
       duration: 2000,
       delay: 200,
@@ -37,6 +36,6 @@ function App() {
       <Footer />
     </>
   );
-}
+};
 
 export default App;

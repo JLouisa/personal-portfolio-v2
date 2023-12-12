@@ -43,7 +43,7 @@ const Lastest = () => {
         {projects.map((project) => {
           return (
             <div key={project.id} className="featured">
-              <a href={project.href} target="_blank">
+              <a className="featuredA" href={project.href} target="_blank">
                 <img className="featuredImg" src={project.photo} alt={project.alt} />
               </a>
               <div className="featuredProject">
@@ -51,7 +51,7 @@ const Lastest = () => {
                 <p className="featuredText">{project.text}</p>
                 <div className="featureIcons">
                   {project.icons.map((icon, index) => {
-                    return <img key={index} src={icon} width="auto" height={80} alt="icons" />;
+                    return <img key={index} src={icon.image} width={icon.width} height={icon.height} alt="icons" />;
                   })}
                 </div>
               </div>
