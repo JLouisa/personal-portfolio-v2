@@ -314,6 +314,12 @@ export const weatherAppIcons = [html5, css3, js, api];
 // Latest projects
 export const faynaIcons = [
   {
+    skill_name: "typescript",
+    image: ts,
+    width: "auto",
+    height: 60,
+  },
+  {
     skill_name: "React",
     image: react,
     width: "auto",
