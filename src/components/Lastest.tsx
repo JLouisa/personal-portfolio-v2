@@ -1,7 +1,11 @@
 import memoryCard from "../assets/representation/memory-card-game.gif";
 import whisper from "../assets/representation/whisper.gif";
 import fayna from "../assets/representation/FaynaM.gif";
-import { faynaIcons, socialSphereIcons, whisperWaveIcons } from "../constants/constantsImg";
+import {
+  faynaIcons,
+  socialSphereIcons,
+  whisperWaveIcons,
+} from "../constants/constantsImg";
 import "boxicons";
 
 const Lastest = () => {
@@ -13,7 +17,7 @@ const Lastest = () => {
       photo: fayna,
       alt: "memory card gif",
       icons: faynaIcons,
-      href: "https://memory-card-peach-chi.vercel.app/",
+      href: "https://www.faynamanagement.com/",
     },
     {
       id: 2,
@@ -45,14 +49,26 @@ const Lastest = () => {
           return (
             <div key={project.id} className="featured">
               <a className="featuredA" href={project.href} target="_blank">
-                <img className="featuredImg" src={project.photo} alt={project.alt} />
+                <img
+                  className="featuredImg"
+                  src={project.photo}
+                  alt={project.alt}
+                />
               </a>
               <div className="featuredProject">
                 <p className="featuredTitle">{project.title}</p>
                 <p className="featuredText">{project.text}</p>
                 <div className="featureIcons">
                   {project.icons.map((icon, index) => {
-                    return <img key={index} src={icon.image} width={icon.width} height={icon.height} alt="icons" />;
+                    return (
+                      <img
+                        key={index}
+                        src={icon.image}
+                        width={icon.width}
+                        height={icon.height}
+                        alt="icons"
+                      />
+                    );
                   })}
                 </div>
               </div>
