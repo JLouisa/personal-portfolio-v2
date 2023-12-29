@@ -83,7 +83,7 @@ export const Skill_data = [
     height: 80,
   },
   {
-    skill_name: "Next js 13",
+    skill_name: "Next js 14",
     Image: next,
     width: "auto",
     height: 80,
@@ -185,7 +185,7 @@ export const Frontend_skill = [
     height: 80,
   },
   {
-    skill_name: "Next js 13",
+    skill_name: "Next js 14",
     Image: next,
     width: "auto",
     height: 80,
@@ -320,34 +320,22 @@ export const faynaIcons = [
     height: 60,
   },
   {
-    skill_name: "React",
-    image: react,
+    skill_name: "Next js 14",
+    image: next,
     width: "auto",
-    height: 60,
+    height: 80,
   },
   {
-    skill_name: "Api",
-    image: api,
+    skill_name: "Tailwind Css",
+    image: tailwind,
     width: "auto",
-    height: 60,
+    height: 80,
   },
   {
-    skill_name: "Node",
-    image: node,
+    skill_name: "Fire base",
+    image: firebase,
     width: "auto",
-    height: 60,
-  },
-  {
-    skill_name: "Express",
-    image: express,
-    width: "auto",
-    height: 60,
-  },
-  {
-    skill_name: "Mongodb",
-    image: mongodb,
-    width: "auto",
-    height: 60,
+    height: 70,
   },
 ];
 export const socialSphereIcons = [
@@ -394,7 +382,7 @@ export const socialSphereIcons = [
     height: 60,
   },
 ];
-export const whisperWaveIcons = [
+export const studySynthesisIcons = [
   {
     skill_name: "typescript",
     image: ts,
@@ -402,34 +390,34 @@ export const whisperWaveIcons = [
     height: 60,
   },
   {
-    skill_name: "htmx",
-    image: htmx,
+    skill_name: "Next js 14",
+    image: next,
     width: "auto",
-    height: 40,
+    height: 80,
   },
   {
-    skill_name: "Node",
-    image: node,
+    skill_name: "Tailwind Css",
+    image: tailwind,
     width: "auto",
-    height: 60,
+    height: 80,
   },
   {
-    skill_name: "Express",
-    image: express,
+    skill_name: "Prisma",
+    image: prisma,
     width: "auto",
-    height: 60,
+    height: 70,
   },
   {
-    skill_name: "Mongodb",
-    image: mongodb,
+    skill_name: "Postger SQL",
+    image: postger,
     width: "auto",
-    height: 60,
+    height: 70,
   },
   {
-    skill_name: "Vite",
-    image: vite,
+    skill_name: "Stripe Payment",
+    image: stripe,
     width: "auto",
-    height: 60,
+    height: 65,
   },
 ];
 
