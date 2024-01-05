@@ -19,6 +19,7 @@ import next from "../assets/icons/next.png";
 import node from "../assets/icons/node-js.png";
 import postger from "../assets/icons/postger.png";
 import prisma from "../assets/icons/prisma.webp";
+import prismaW from "../assets/icons/prisma-white.svg";
 import pug from "../assets/icons/pug.svg";
 import python from "../assets/icons/python-original.svg";
 import stripe from "../assets/icons/stripe.webp";
@@ -370,7 +371,7 @@ export const socialSphereIcons = [
     height: 60,
   },
   {
-    skill_name: "Mongodb",
+    skill_name: "Mongo db",
     image: mongodb,
     width: "auto",
     height: 60,
@@ -403,13 +404,13 @@ export const studySynthesisIcons = [
   },
   {
     skill_name: "Prisma",
-    image: prisma,
+    image: prismaW,
     width: "auto",
     height: 70,
   },
   {
     skill_name: "Postger SQL",
-    image: postger,
+    image: mongodb,
     width: "auto",
     height: 70,
   },
