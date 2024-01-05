@@ -13,7 +13,7 @@ const Lastest = () => {
     {
       id: 1,
       title: "Study Synthesis",
-      text: "I have developed a PDF chatting app called StudySynthesis AI, which allows users to ask any question about a PDF and receive accurate answers. This SaaS (Software as a Service) application was created using Next.js, TypeScript, Tailwind CSS, and the Shadcn UI library, ensuring both functionality and an inviting user experience. MongoDB is used as the database, and the app includes a user authentication system that allows seamless login through email verification. The application supports PDF upload, processing, and storage, ensuring smooth and efficient operation.",
+      text: "I have developed a PDF chatting app called StudySynthesis, which allows users to ask any question about a PDF to StudySynthesis AI and receive accurate answers. This SaaS (Software as a Service) application was created using Next.js, TypeScript, Tailwind CSS, and the Shadcn UI library, ensuring both functionality and an inviting user experience. MongoDB is used as the database, and the app includes an user authentication system that allows seamless login through email verification. The application supports PDF upload, processing, and storage, ensuring smooth and efficient operation.",
       photo: studysynthesis,
       alt: "messaging app gif",
       icons: studySynthesisIcons,
