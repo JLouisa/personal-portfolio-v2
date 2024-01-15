@@ -33,19 +33,19 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Shopping Cart API",
-      text: "My project built with ReactJS and Vite, rigorously tested with Jest, and powered by real-time data from fakestoreapi.com. This dynamic shopping-cart application seamlessly integrates API connections, delivering a fully functional and immersive shopping experience.",
-      img: shoppingCard,
-      icons: shoppingCardIcons,
-      href: "https://shopping-cart-5gp33884t-jonathan-louisas-projects.vercel.app/home",
-    },
-    {
-      id: 4,
       title: "Memory Card",
       text: "I developed this React game that leveraged Jest for testing and connected to the Pokémon API. I crafted a captivating memory card game using data from the API.",
       img: memoryCard,
       icons: memoryCardIcons,
       href: "https://memory-card-peach-chi.vercel.app/",
+    },
+    {
+      id: 4,
+      title: "Shopping Cart API",
+      text: "My project built with ReactJS and Vite, rigorously tested with Jest, and powered by real-time data from fakestoreapi.com. This dynamic shopping-cart application seamlessly integrates API connections, delivering a fully functional and immersive shopping experience.",
+      img: shoppingCard,
+      icons: shoppingCardIcons,
+      href: "https://shopping-cart-5gp33884t-jonathan-louisas-projects.vercel.app/home",
     },
     {
       id: 5,
@@ -65,6 +65,10 @@ const Projects = () => {
     },
   ];
 
+  const navigateToWebsite = (web: string) => {
+    window.open(web, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <section className="section sec4" id="projects">
       <div className="blogs-content">
@@ -75,10 +79,12 @@ const Projects = () => {
         <div className="blogs">
           {blogs.map((blog) => {
             return (
-              <div key={blog.id} className="blog">
-                {/* <a href={blog.href} target="_blank"> */}
+              <div
+                key={blog.id}
+                className="blog"
+                onClick={() => navigateToWebsite(blog.href)}
+              >
                 <img src={blog.img} alt="project img"></img>
-                {/* </a> */}
                 <div className="blogText">
                   <h4>
                     <p className="blogTitle">{blog.title}</p>
