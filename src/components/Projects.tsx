@@ -18,7 +18,7 @@ const Projects = () => {
     {
       id: 1,
       title: "Where is Waldo (Fullstack)",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla debitis recusandae corrupti dolore asperiores nisi.",
+      text: "My second fullstack project, build with ReactJS, NodeJS, ExpressJS, MongoDB, and Vite. This project is a game application that allows users to play the classic game of Where's Waldo. Fully screen resolution responsive and leaderboard included.",
       img: waldo,
       icons: waldoIcons,
       href: "https://where-is-waldo-lyart.vercel.app/home",
@@ -26,7 +26,7 @@ const Projects = () => {
     {
       id: 2,
       title: "Blog (Fullstack)",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla debitis recusandae corrupti dolore asperiores nisi.",
+      text: "My first fullstack project, build with ReactJS, NodeJS, ExpressJS, MongoDB, and Vite. This project is a blog application that allows users to create, read, update, and delete blog posts.",
       img: blogsApi,
       icons: blogIcons,
       href: "https://odin-blog.vercel.app/home",
@@ -34,7 +34,7 @@ const Projects = () => {
     {
       id: 3,
       title: "Shopping Cart API",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla debitis recusandae corrupti dolore asperiores nisi.",
+      text: "My project built with ReactJS and Vite, rigorously tested with Jest, and powered by real-time data from fakestoreapi.com. This dynamic shopping-cart application seamlessly integrates API connections, delivering a fully functional and immersive shopping experience.",
       img: shoppingCard,
       icons: shoppingCardIcons,
       href: "https://shopping-cart-5gp33884t-jonathan-louisas-projects.vercel.app/home",
@@ -42,26 +42,26 @@ const Projects = () => {
     {
       id: 4,
       title: "Memory Card",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla debitis recusandae corrupti dolore asperiores nisi.",
+      text: "I developed this React game that leveraged Jest for testing and connected to the Pokémon API. I crafted a captivating memory card game using data from the API.",
       img: memoryCard,
       icons: memoryCardIcons,
       href: "https://memory-card-peach-chi.vercel.app/",
     },
     {
       id: 5,
-      title: "CSS-Only Ball",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla debitis recusandae corrupti dolore asperiores nisi.",
-      img: cssBall,
-      icons: cssBallIcons,
-      href: "https://jlouisa.github.io/bouncing-ball/",
-    },
-    {
-      id: 6,
       title: "Weather App",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla debitis recusandae corrupti dolore asperiores nisi.",
+      text: "I created a minimalist Weather app using vanilla JavaScript, featuring a live API connection to Weather.com. This project demonstrates my proficiency in building user-friendly interfaces and integrating external APIs while showcasing my JavaScript skills.",
       img: weatherApp,
       icons: weatherAppIcons,
       href: "https://jlouisa.github.io/weather-app/",
+    },
+    {
+      id: 6,
+      title: "CSS-Only Ball",
+      text: "This a project I build using on html divs and css. Zero javascript!",
+      img: cssBall,
+      icons: cssBallIcons,
+      href: "https://jlouisa.github.io/bouncing-ball/",
     },
   ];
 
