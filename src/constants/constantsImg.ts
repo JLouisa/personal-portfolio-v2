@@ -31,6 +31,7 @@ import react from "../assets/icons/react.png";
 import reactNative from "../assets/icons/reactNative.png";
 import reactquery from "../assets/icons/reactquery.png";
 import ruby from "../assets/icons/ruby-original.svg";
+import rust from "../assets/icons/rust.svg";
 import vite from "../assets/icons/vite.svg";
 import vue from "../assets/icons/vuejs-original.svg";
 
@@ -301,6 +302,15 @@ export const Other_skill = [
     Image: ruby,
     width: "auto",
     height: 70,
+  },
+];
+
+export const top_skill = [
+  {
+    skill_name: "Rust",
+    Image: rust,
+    width: "auto",
+    height: 100,
   },
 ];
 
